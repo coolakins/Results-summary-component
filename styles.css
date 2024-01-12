@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+body {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/** Top section  */
+
+.results {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.ma-results {
+  background: rgb(120, 87, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(120, 87, 255, 1) 0%,
+    rgba(46, 43, 233, 1) 50%
+  );
+  border-radius: 0 0 20px 20px;
+  padding: 30px 10px;
+  color: whitesmoke;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.p-results,
+.main-results,
+.hi-results {
+  color: #8F8DF8;
+  margin: 5px 0;
+}
+
+.main-results {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(78, 33, 202);
+  background: linear-gradient(
+    90deg,
+    rgba(78, 33, 202, 1) 0%,
+    rgba(36, 33, 202, 1) 70%
+  );
+  border-radius: 50%;
+}
+.main-results p{
+  font-size: 0.6rem;
+}
+b {
+  display: block;
+  font-size: 2.5rem;
+  color: white;
+}
+
+/** Bottom section */
+
+.secma-results {
+  padding: 1rem;
+}
+.sum-results {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  margin: 0.6rem 0;
+  border-radius: 5px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sum-results:nth-of-type(1) {
+  background: hsla(0, 100%, 67%, 0.1);
+}
+
+.sum-results:nth-of-type(1) .title {
+  color: hsl(0, 100%, 67%);
+}
+
+.sum-results:nth-of-type(2) {
+  background: hsla(39, 100%, 56%, 0.1);
+}
+.sum-results:nth-of-type(2) .title {
+  color: hsl(39, 100%, 56%);
+}
+
+.sum-results:nth-of-type(3) {
+  background: hsla(166, 100%, 37%, 0.1);
+}
+
+.sum-results:nth-of-type(3) .title {
+  color: hsl(166, 100%, 37%);
+}
+.sum-results:nth-of-type(4) {
+  background: hsla(234, 85%, 45%, 0.1);
+}
+
+.sum-results:nth-of-type(4) .title {
+  color: hsl(234, 85%, 45%);
+}
+.half-results {
+  margin: 5px 0;
+  color: hsl(224, 30%, 27%);
+}
+.con-results {
+  width: 100%;
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.7rem 0;
+  margin: 0.5rem 0;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (width >= 480px) {
+  body {
+    min-height: 100vh;
+  }
+  .results {
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 3rem;
+  }
+  .ma-results {
+    border-radius: 20px;
+  }
+  .secma-results {
+    border-radius: 0 20px 20px 0;
+    box-shadow: 10px 10px 5px 0px rgba(245, 245, 245, 1);
+  }
+}
+
+
+
